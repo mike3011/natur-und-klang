@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt & Platz anfragen | Natur und Klang Kassel</title>
+  <meta name="description" content="Platz anfragen für dein Naturerlebnis in der Kasseler Aue. Schreib uns – wir antworten innerhalb von 48 Stunden und finden gemeinsam einen Termin.">
+  <link rel="canonical" href="https://natur-und-klang.de/kontakt.html">
+  <link rel="stylesheet" href="styles.css">
+
+  <meta property="og:title" content="Kontakt & Platz anfragen | Natur und Klang Kassel">
+  <meta property="og:description" content="Platz anfragen für Natur und Klang in der Kasseler Aue. Einzeln oder Kleingruppe – wir melden uns innerhalb von 48 Stunden.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://natur-und-klang.de/kontakt.html">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="site-nav" aria-label="Hauptnavigation">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">Natur <span>&</span> Klang</a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+    <label for="nav-toggle" class="nav-burger" aria-label="Menü öffnen">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <ul class="nav-menu" role="list">
+      <li><a href="index.html">Startseite</a></li>
+      <li><a href="wirkung.html">Wirkung</a></li>
+      <li><a href="events.html">Termine</a></li>
+      <li><a href="ueber-uns.html">Über uns</a></li>
+      <li><a href="kontakt.html" class="nav-cta active" aria-current="page">Platz anfragen</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Page Header -->
+<header class="page-header">
+  <span class="eyebrow" style="color: rgba(217,168,60,0.9);">Dein nächster Schritt</span>
+  <h1>Jetzt deinen Platz für dein<br>Naturerlebnis in Kassel anfragen</h1>
+  <p class="lead">Kein Formular-Dschungel. Schreib uns kurz, was du suchst – wir melden uns innerhalb von 48 Stunden.</p>
+</header>
+
+<!-- Kontakt -->
+<section class="kontakt-section" aria-labelledby="kontakt-form-heading">
+  <div class="kontakt-grid">
+
+    <!-- Formular -->
+    <div>
+      <h2 id="kontakt-form-heading" style="margin-bottom: 2rem;">Deine Anfrage</h2>
+      <form id="kontaktForm" novalidate>
+
+        <!-- Honeypot gegen Spam (versteckt) -->
+        <div style="display:none;" aria-hidden="true">
+          <label>Nicht ausfüllen: <input name="bot-feld" id="bot-feld"></label>
+        </div>
+
+        <div class="form-group">
+          <label for="name">Dein Name <span aria-hidden="true">*</span></label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            autocomplete="name"
+            placeholder="Vorname Nachname"
+            aria-required="true">
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-Mail-Adresse <span aria-hidden="true">*</span></label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            autocomplete="email"
+            placeholder="deine@email.de"
+            aria-required="true">
+        </div>
+
+        <div class="form-group">
+          <label for="interesse">Ich interessiere mich für</label>
+          <select id="interesse" name="interesse">
+            <option value="" disabled selected>Bitte wählen …</option>
+            <option value="premiere-22juni">★ Premiere: 22. Juni 2026, 17:15 – 18:30 Uhr (32 €)</option>
+            <option value="einzelbegleitung">Einzelbegleitung (1–2 Std.)</option>
+            <option value="kleingruppe">Kleingruppe (2–3 Std.)</option>
+            <option value="paare">Auszeit für Paare</option>
+            <option value="team">Betriebliche Auszeit / Team</option>
+            <option value="wunschtermin">Individueller Wunschtermin</option>
+            <option value="allgemein">Allgemeine Frage / noch unsicher</option>
+          </select>
+          <div class="booking-note" id="booking-note">
+            ✓ <strong>Verbindliche Anmeldung für die Premiere am 22. Juni 2026.</strong>
+            Nach deiner Anfrage erhältst du eine Bestätigung mit Zahlungshinweis (32 € per Überweisung).
+            Nur 12 Plätze – dein Platz ist nach Zahlungseingang gesichert.
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="wunschtermin">Wunschtermin oder Zeitraum</label>
+          <input
+            type="text"
+            id="wunschtermin"
+            name="wunschtermin"
+            placeholder="z. B. Samstag vormittags, KW 24, flexibel …"
+            autocomplete="off">
+        </div>
+
+        <div class="form-group">
+          <label for="nachricht">Deine Nachricht <span style="font-weight:400; color: var(--grey);">(optional)</span></label>
+          <textarea
+            id="nachricht"
+            name="nachricht"
+            placeholder="Was beschäftigt dich gerade? Was erhoffst du dir von dem Erlebnis? Oder einfach: Ich möchte einen Platz anfragen."></textarea>
+        </div>
+
+        <!-- DSGVO-Einwilligung (Pflichtfeld) -->
+        <div class="form-consent">
+          <label class="form-consent-label">
+            <input type="checkbox" id="einwilligung" name="einwilligung" required aria-required="true">
+            <span>Ich stimme zu, dass meine Angaben zur Bearbeitung meiner Anfrage gespeichert und verarbeitet werden. Mehr dazu in unserer <a href="datenschutz.html">Datenschutzerklärung</a>. Die Einwilligung kann jederzeit widerrufen werden. <span aria-hidden="true">*</span></span>
+          </label>
+        </div>
+
+        <!-- Marketing-Einwilligung (freiwillig) -->
+        <div class="form-consent">
+          <label class="form-consent-label">
+            <input type="checkbox" id="marketing" name="marketing">
+            <span>Ja, ich möchte gelegentlich über neue Termine und Angebote von NATUR & KLANG informiert werden. Diese Einwilligung ist freiwillig und kann jederzeit widerrufen werden.</span>
+          </label>
+        </div>
+
+        <div style="text-align: center;">
+          <button type="submit" id="submitBtn" class="btn btn-primary">Anfrage absenden</button>
+          <p class="form-success-note">Wir antworten innerhalb von 48 Stunden.</p>
+        </div>
+
+        <div id="form-feedback" role="alert" aria-live="polite"></div>
+      </form>
+
+      <script>
+        const WEBHOOK_URL = 'https://hook.integrator.boost.space/v5fp1nnyq32e7srky1bnxvigiupf23iq';
+
+        // URL-Parameter auslesen: ?event=premiere → Premiere vorauswählen
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('event') === 'premiere') {
+          document.getElementById('interesse').value = 'premiere-22juni';
+          document.getElementById('booking-note').style.display = 'block';
+        }
+
+        // Booking-Hinweis ein-/ausblenden je nach Auswahl
+        document.getElementById('interesse').addEventListener('change', function() {
+          const note = document.getElementById('booking-note');
+          note.style.display = this.value === 'premiere-22juni' ? 'block' : 'none';
+        });
+
+        const form = document.getElementById('kontaktForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const feedback = document.getElementById('form-feedback');
+
+        form.addEventListener('submit', async function(e) {
+          e.preventDefault();
+
+          // Honeypot-Check
+          if (document.getElementById('bot-feld').value) return;
+
+          if (!form.checkValidity()) {
+            form.reportValidity();
+            return;
+          }
+
+          submitBtn.disabled = true;
+          submitBtn.textContent = 'Wird gesendet …';
+          feedback.className = '';
+          feedback.style.display = 'none';
+
+          const payload = {
+            name:          document.getElementById('name').value.trim(),
+            email:         document.getElementById('email').value.trim(),
+            interesse:     document.getElementById('interesse').value,
+            wunschtermin:  document.getElementById('wunschtermin').value.trim(),
+            nachricht:     document.getElementById('nachricht').value.trim(),
+            einwilligung:  document.getElementById('einwilligung').checked,
+            marketing:     document.getElementById('marketing').checked,
+            zeitstempel:   new Date().toISOString(),
+            quelle:        'natur-und-klang.de'
+          };
+
+          try {
+            const res = await fetch(WEBHOOK_URL, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(payload)
+            });
+
+            if (res.ok) {
+              feedback.className = 'form-feedback-success';
+              feedback.textContent = 'Vielen Dank für deine Anfrage! Wir melden uns innerhalb von 48 Stunden bei dir.';
+              feedback.style.display = 'block';
+              form.reset();
+            } else {
+              throw new Error('Serverfehler ' + res.status);
+            }
+          } catch (err) {
+            feedback.className = 'form-feedback-error';
+            feedback.textContent = 'Es ist ein Fehler aufgetreten. Bitte schreib uns direkt an kontakt@natur-und-klang.de.';
+            feedback.style.display = 'block';
+          } finally {
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Anfrage absenden';
+          }
+        });
+      </script>
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="kontakt-sidebar" aria-label="Kontaktinformationen">
+      <h3>Was danach passiert</h3>
+
+      <div class="kontakt-info-block">
+        <h4>Innerhalb von 48 Stunden</h4>
+        <p>Wir melden uns per E-Mail und schlagen einen oder zwei Terminoptionen vor – oder fragen nach, wenn wir noch etwas wissen möchten.</p>
+      </div>
+
+      <div class="kontakt-info-block">
+        <h4>Kurzes Vorgespräch</h4>
+        <p>Bei Bedarf klären wir vorab telefonisch oder per Mail, was du dir wünschst und was zu dir passt. Das bleibt kurz und unkompliziert.</p>
+      </div>
+
+      <div class="kontakt-info-block">
+        <h4>Treffpunkt</h4>
+        <p>Wir schicken dir eine genaue Wegbeschreibung zum Treffpunkt in der Kasseler Aue. Gut erreichbar mit öffentlichen Verkehrsmitteln und zu Fuß aus der Innenstadt.</p>
+      </div>
+
+      <div class="kontakt-info-block">
+        <h4>Fragen vorab?</h4>
+        <p>Schreib uns direkt an:<br>
+          <a href="mailto:kontakt@natur-und-klang.de" style="color: var(--green); border-bottom: 1px solid rgba(45,80,22,0.3);">kontakt@natur-und-klang.de</a>
+        </p>
+      </div>
+
+      <div style="background-color: var(--beige); border-radius: 6px; padding: 1.5rem; margin-top: 1rem; border-left: 3px solid var(--gold);">
+        <p style="color: var(--grey); font-size: 0.9rem; margin: 0;">
+          <strong style="color: var(--anthracite);">Kasseler Aue</strong><br>
+          Parkähnliche Landschaft direkt an der Fulda, Kassel –
+          eine der schönsten naturnahen Flächen mitten in der Stadt.
+        </p>
+      </div>
+    </aside>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer" aria-label="Seitenfooter">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="footer-logo">Natur <span>&</span> Klang</a>
+      <p>Geführtes Naturerlebnis mit Klangschalen in der Kasseler Aue. Für Menschen, die wirklich abschalten möchten – mitten in Kassel.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Seiten</h4>
+      <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="wirkung.html">Wirkung</a></li>
+        <li><a href="events.html">Termine & Formate</a></li>
+        <li><a href="ueber-uns.html">Über uns</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Rechtliches</h4>
+      <ul>
+        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="datenschutz.html">Datenschutz</a></li>
+      </ul>
+      <h4 style="margin-top:1.5rem;">Partnerinnen</h4>
+      <ul>
+        <li><a href="https://yin-und-klang.de" target="_blank" rel="noopener">yin-und-klang.de</a></li>
+        <li><a href="https://klangzeit-kassel.de" target="_blank" rel="noopener">klangzeit-kassel.de</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Natur und Klang, Kassel</span>
+    <nav class="footer-legal" aria-label="Rechtliche Links">
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
