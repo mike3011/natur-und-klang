@@ -603,6 +603,8 @@
       <ul>
         <li><button class="btn-link" onclick="openModal('impressum')">Impressum</button></li>
         <li><button class="btn-link" onclick="openModal('datenschutz')">Datenschutz</button></li>
+        <li><button class="btn-link" onclick="openModal('agb')">AGB</button></li>
+        <li><button class="btn-link" onclick="openModal('widerruf')">Widerrufsbelehrung</button></li>
       </ul>
       <h4 style="margin-top:1.5rem;">Partnerinnen</h4>
       <ul>
@@ -616,6 +618,8 @@
     <nav class="footer-legal" aria-label="Rechtliche Links">
       <button class="btn-link" onclick="openModal('impressum')">Impressum</button>
       <button class="btn-link" onclick="openModal('datenschutz')">Datenschutz</button>
+      <button class="btn-link" onclick="openModal('agb')">AGB</button>
+      <button class="btn-link" onclick="openModal('widerruf')">Widerrufsbelehrung</button>
     </nav>
   </div>
 </footer>
@@ -779,6 +783,92 @@
         Telefon: 0561 / 43027276
       </p>
     </div>
+  </div>
+</div>
+
+<!-- ======================================================
+     MODAL: AGB
+     ====================================================== -->
+<div class="modal-overlay" id="modal-agb" role="dialog" aria-modal="true" aria-labelledby="modal-agb-title">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('agb')" aria-label="AGB schließen">×</button>
+    <h1 id="modal-agb-title">Allgemeine Geschäftsbedingungen</h1>
+    <span class="modal-date">Stand: Juni 2026</span>
+
+    <div class="modal-block">
+      <h2>Geltungsbereich</h2>
+      <p>Diese AGB gelten für alle Naturerlebnis-Formate und Veranstaltungen von Natur &amp; Klang (Nadine Rau u. Mike Trepte GbR), unabhängig davon, ob die Buchung über die Website, per E-Mail oder auf anderem Weg erfolgt.</p>
+    </div>
+
+    <div class="modal-block">
+      <h2>Vertragsabschluss</h2>
+      <p>Die Darstellung der Angebote und Formate stellt kein bindendes Angebot dar. Mit dem Absenden des Kontaktformulars wird lediglich eine Anfrage gestellt. Der Vertrag kommt erst zustande, wenn Natur &amp; Klang die Teilnahme in Textform bestätigt und die Teilnahmegebühr vollständig eingegangen ist.</p>
+    </div>
+
+    <div class="modal-block">
+      <h2>Platzsicherung und Zahlung</h2>
+      <p>Die Teilnahmegebühr ist innerhalb von 5 Tagen nach Rechnungsstellung zu zahlen. Maßgeblich für die Platzsicherung ist der tatsächliche Zahlungseingang. Erfolgt keine fristgerechte Zahlung, kann der Platz ohne weitere Mitteilung anderweitig vergeben werden.</p>
+    </div>
+
+    <div class="modal-block">
+      <h2>Leistungen</h2>
+      <p>Inhalt, Umfang und Termine ergeben sich aus der jeweiligen Angebotsbeschreibung. Änderungen aus wichtigem Grund bleiben vorbehalten.</p>
+    </div>
+
+    <div class="modal-block">
+      <h2>Witterung und Durchführung im Freien</h2>
+      <p>Die Angebote finden grundsätzlich auch bei schlechtem Wetter statt – bitte entsprechend kleiden. Bei extremen Witterungsbedingungen, die eine sichere Durchführung nicht erlauben (z.&nbsp;B. Gewitter, Sturm), behalten wir uns vor, einen Termin kurzfristig abzusagen oder zu verlegen. In diesem Fall werden bereits gezahlte Teilnahmegebühren vollständig erstattet oder auf einen Ausweichtermin übertragen.</p>
+    </div>
+
+    <div class="modal-block">
+      <h2>Stornobedingungen</h2>
+      <p>Stornierungen müssen in Textform erfolgen:</p>
+      <ul>
+        <li><strong>bis 21 Tage vor Beginn:</strong> vollständige Rückerstattung der gezahlten Teilnahmegebühr</li>
+        <li><strong>20 bis 8 Tage vor Beginn:</strong> 50&nbsp;% der Teilnahmegebühr werden einbehalten, 50&nbsp;% werden erstattet</li>
+        <li><strong>ab 7 Tage vor Beginn oder bei Nichterscheinen:</strong> vollständiger Einbehalt der Teilnahmegebühr</li>
+      </ul>
+      <p>Die Stornokosten entfallen, wenn eine Ersatzperson gestellt wird oder der Platz durch Natur &amp; Klang neu besetzt werden kann. Eine einmalige Umbuchung ist bis 7 Tage vor Beginn möglich.</p>
+    </div>
+
+    <div class="modal-block">
+      <h2>Eigenverantwortung</h2>
+      <p>Die Teilnahme erfolgt auf eigene Verantwortung. Die Angebote finden in der Natur statt und setzen eine der Witterung angepasste Ausrüstung sowie körperliche Eignung für leichte Gehstrecken auf flachem Gelände voraus. Die Formate ersetzen keine medizinische oder therapeutische Behandlung. Wer an gesundheitlichen Einschränkungen leidet, die einer Teilnahme entgegenstehen könnten, ist gebeten, dies vorab mit uns zu besprechen.</p>
+    </div>
+
+    <div class="modal-block">
+      <h2>Haftung</h2>
+      <p>Die Haftung ist auf Vorsatz und grobe Fahrlässigkeit beschränkt. Bei einfacher Fahrlässigkeit haften wir nur bei Verletzung wesentlicher Vertragspflichten. Für Schäden, die sich aus der Eigenverantwortung der Teilnehmenden ergeben, übernehmen wir keine Haftung.</p>
+    </div>
+
+    <div class="modal-block">
+      <h2>Datenschutz</h2>
+      <p>Personenbezogene Daten werden ausschließlich zur Vertragsdurchführung genutzt. Weitere Informationen finden sich in unserer <button class="btn-link" onclick="closeModal('agb'); openModal('datenschutz')">Datenschutzerklärung</button>.</p>
+    </div>
+
+    <div class="modal-block">
+      <h2>Schlussbestimmungen</h2>
+      <p>Es gilt deutsches Recht. Vertragssprache ist Deutsch.</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- ======================================================
+     MODAL: WIDERRUFSBELEHRUNG
+     ====================================================== -->
+<div class="modal-overlay" id="modal-widerruf" role="dialog" aria-modal="true" aria-labelledby="modal-widerruf-title">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('widerruf')" aria-label="Widerrufsbelehrung schließen">×</button>
+    <h1 id="modal-widerruf-title">Widerrufsbelehrung</h1>
+    <span class="modal-date">Stand: Juni 2026</span>
+
+    <div class="modal-block">
+      <p>Verbrauchern steht grundsätzlich ein Widerrufsrecht zu.</p>
+      <p>Kein Widerrufsrecht besteht jedoch bei Verträgen zur Teilnahme an Veranstaltungen mit festem Termin oder festem Zeitraum gemäß <strong>§&nbsp;312g Abs.&nbsp;2 Nr.&nbsp;9 BGB</strong>.</p>
+      <p>Da Natur &amp; Klang ausschließlich Formate mit festem Termin anbietet, besteht für diese Verträge <strong>kein Widerrufsrecht</strong>.</p>
+    </div>
+
   </div>
 </div>
 
