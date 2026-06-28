@@ -1249,7 +1249,7 @@ section[id], div[id].event-anchor {
   font-family: var(--font-body);
 }
 .modal-close:hover { color: var(--anthracite); }
-.modal-box h1 {
+.modal-box > h2 {
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
   color: var(--green);
